@@ -16,5 +16,6 @@ Here are some of the features of my Python Blackjack game:
   * If doubling is not allowed or if not possible due to insufficient funds, the game will automatically omit that option on its input prompt and users who attempt to select the double option will be given an error message and will be asked to try again.
 * Jack, Queen, and King cards will automatically be converted to 10's.
 * Ace cards will be converted to 11's if the total is less than 21. Otherwise, Aces will be converted to 1's.
+* The dealer's threshold to hit when its total is below that value can be adjusted. By default, the dealer will hit on soft 17.
 
 I plan to add a functionality that would allow users to do a split if they have a pair of matching card values on the first 2 cards dealt. This process may be a little complex since it would require an additional hand on top of the current hand being played. Essentially, the user would now be playing 2 hands separately if this was the case.
