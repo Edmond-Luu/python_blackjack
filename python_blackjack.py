@@ -29,6 +29,7 @@ def sum_function(hand):
 
 
 print("\nWelcome to Edmond's Python Blackjack Game!")
+print(f"The dealer will hit on soft {dealer_soft}.")
 
 while money > 0 and bet != "q" and money >= minimum_bet:
     bet = input(f"----------------------------------------------\nYou have ${money}. The minimum bet is ${minimum_bet}. Please enter a bet or type 'q' to quit: ")
@@ -70,6 +71,7 @@ while money > 0 and bet != "q" and money >= minimum_bet:
                     elif decision == "d" and first_hand == True and money >= bet*2:
                         bet *= 2
                         new_card(player, player_int)
+                        print(f"Your cards are {list_conversion(player)}")
                         break
                     elif decision == "s":
                         first_hand = False
